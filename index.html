@@ -4,50 +4,31 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Html 연습</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <script defer src="./js/main.js"></script>
   </head>
   <body>
-    <h1>Pig dice game</h1>
-    <div>
-      <button class="dice_btn">주사위 굴리기</button>
-    </div>
-    <div>
-      <ul class="current_score_box">
-        <li class="current">현재 주사위 값</li>
-        <li class="current_score_value"></li>
-      </ul>
-      <ul class="cumulative_score_box">
-        <li class="cumulative">현재 누적 점수</li>
-        <li class="cumulative_score_value"></li>
-      </ul>
-    </div>
-    <div>
-      <table border="1">
-        <caption>player score</caption>
-        <th>round</th>
-        <th>1 round</th>
-        <th>2 round</th>
-        <th>3 round</th>
-        <th>4 round</th>
-        <th>5 round</th>
-        <tr>
-            <th>player 1</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th>player 2</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-          </table>
+    <div class="container">
+      <div class="title">Pig the Dice</div>
+      <div class="flex-container">
+        <div class="item">
+          <label class="name">Player 1</label>
+          <input class="score1" readonly />
+        </div>
+        <div class="item">
+          <label class="name">Player 2</label>
+          <input class="score2" readonly />
+        </div>
+      </div>
+      <h3>
+        주사위를 굴리려면 'Roll'버튼을, 그만 하려면 'Hold'버튼을 누르세요.
+      </h3>
+      <div class="flex-container">
+        <button class="btn1">Roll</button>
+        <button class="btn2"></button>
+        <button class="btn3">Hold</button>
+      </div>
     </div>
   </body>
-  <script src="./main.js"></script>
 </html>
